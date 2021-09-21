@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 30px 0;
+  background-color: hsl(225, 100%, 94%);
+  font-style: 'Red Hat Display';
+}
+a {
+  text-decoration: none;
+  transition: .5s;
+  color: #000;
+}
+main{
+       margin: 30px 20px;
+       padding-bottom: 40px;
+       max-width: 450px;
+       text-align: center;
+       font-size: 18px;
+       border-radius: 25px;
+       background-color: #fff;
+  }
+  .main-image{
+    width: 100%;
+    border-radius: 15px 15px 0 0 ;
+  }
+  .main-text {
+    margin: 15px auto;
+    padding: 0 30px;
+  }
+  .main-text, .cancel-order,.mounthly-price{
+    color:hsl(224, 23%, 55%);
+  }
+  
+  .order-summary{
+    margin: 20px auto;
+    letter-spacing: 1px;
+  }
+  .annual-plan{
+    display: flex;
+    margin: 20px 20px;
+    padding: 20px 20px;
+    border-radius: 15px;
+    background-color: hsl(225, 100%, 98%);
+  }
+  .annual-plan span {
+    margin-right: 15px;
+}
+
+.music-note{
+  flex-basis: 25%;
+}
+.annual-plan a {
+margin: 12px auto 0 15px;}
+.annual-plan a:hover{
+  color:  hsl(266, 100%, 60%);
+}
+.payment-btn{
+    margin: 20px auto 25px;
+    padding: 15px 80px;
+    border-radius: 15px;
+    border-style: none;
+    letter-spacing: 1px;
+    transition: .5s;
+    cursor: pointer;
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+  }
+  .payment-btn:hover{
+    background-color:  hsl(266, 100%, 60%);
+  }
+
+  @media ( min-width:1200px){
+      main {
+          margin: 50px auto;
+        }
+      .cancel-order{
+        display: block;
+        }
+        a:hover{
+          color: #000;
+        }  
+        .main-text,.annual-plan{
+          margin:20px 40px
+        }
+  }
